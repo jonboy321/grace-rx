@@ -50,11 +50,11 @@ Advocate.init({
         type:DataTypes.STRING,
         allowNull: false
     },
-    datastarted: {
+    datestarted: {
         type:DataTypes.INTEGER,
         allowNull: false
     },
-    datavh:{
+    datevh:{
         type:DataTypes.INTEGER,
         allowNull: false
     },
