@@ -22,13 +22,13 @@ Advocate.init({
         allowull: false,
         autoIncrement: true
     },
-    firstname: {
+    fname: {
         type:DataTypes.STRING,
         allowNull: false,
         // defaultValue: "John "
     
     },
-    lastname: {
+    lname: {
         type:DataTypes.STRING,
         allowNull: false,
         // defaultValue: " Doe"
@@ -38,13 +38,13 @@ Advocate.init({
         allowNull: false,
         defaultValue: "ceo"
     },
-    social: {
+    ss: {
         type:DataTypes.INTEGER,
         allowNull: false
     },
     dob: {
         type:DataTypes.INTEGER,
-        allowNull: false
+        
     },
     email: {
         type:DataTypes.STRING,
@@ -58,17 +58,17 @@ Advocate.init({
         type:DataTypes.INTEGER,
         allowNull: false
     },
-    shippingaddress: {
+    saddress: {
         type:DataTypes.STRING,
         allowNull: false
     },
-    personaladdress: {
+    paddress: {
         type:DataTypes.STRING,
         allowNull: false
     },
-    onboadmangerid: {
+    obmi: {
         type:DataTypes.INTEGER,
-        allowNull: false
+        
     },
     verified: {
         type:DataTypes.STRING,
@@ -78,20 +78,20 @@ Advocate.init({
         type:DataTypes.STRING,
         
     },
-    daysh: {
+    dsh: {
         type:DataTypes.INTEGER,
         allowNull: false
     },
     teamsize: {
         type:DataTypes.INTEGER,
     },
-    prev2weeksale: {
+    p2wsale: {
         type:DataTypes.STRING,
     },
-    prev2weekteamsale: {
+    p2wtsale: {
         type:DataTypes.INTEGER,
     },
-    onhandinventory: {
+    ohi: {
         type:DataTypes.INTEGER,
     }
    
