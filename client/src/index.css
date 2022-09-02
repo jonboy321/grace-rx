@@ -24,9 +24,10 @@ code {
   flex-direction: column;
   
   justify-content: center;
-  padding-bottom: 3pt;
-  border-bottom: 2px solid black;
-  background-color: lightgray;
+  padding-bottom: 5pt;
+  box-shadow: 1px 1px 5px;
+  background-color: lightblue;
+  margin-bottom: 40px;
 }
 
 .createbox {
@@ -36,18 +37,53 @@ code {
   align-items: center;
 }
 
-.fname {
-  margin-top: 150px;
-  border: 3px solid black;
-  border-radius: 3pt;
-  margin-bottom: 10px;
-  width: 15%;
+.formContainer {
   text-align: center;
 }
-.lname {
-  border: 3px solid black;
-  border-radius: 3pt;
-  margin-bottom: 10px;
+
+.form {
+  margin-top: 20px;
+  align-items: center;
+}
+
+#mobile,
+#fullname,
+#position,
+#ss,
+#dob,
+#email,
+#datestarted,
+#datevh,
+#saddress,
+#paddress,
+#obmi {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 8pt;
   width: 15%;
+
+  margin-top: 10px;
+  margin-right: 25px;
+  margin-left: 25px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.btnContainer {
   text-align: center;
+}
+
+.submitBtn {
+  background-color: rgba(0, 149, 255, 0.637);
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+
+  border-radius: 10pt;
+  border-width: 0px;
+  box-shadow: 5px 5px 20px darkgray;
+
+  padding-top: 4pt;
+  padding-bottom: 4pt;
+  padding-left: 6pt;
+  padding-right: 6pt;
 }
