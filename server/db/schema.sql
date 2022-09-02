@@ -1,4 +1,4 @@
 -- drop database if there is one
-DROP DATABASE IF EXISTS grace_rx
+DROP DATABASE IF EXISTS grace-rx
 -- create database 
-CREATE DATABASE grace_rx
+CREATE DATABASE grace-rx
