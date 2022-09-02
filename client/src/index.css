@@ -51,3 +51,14 @@ code {
   width: 15%;
   text-align: center;
 }
+
+.navbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .links {
+  display: flex;
+  justify-content:space-evenly;
+} */

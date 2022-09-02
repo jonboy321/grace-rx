@@ -1,12 +1,22 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CreateAd from "./component/CreateAd";
-import Header from "./component/Header"
-
+import Header from "./component/Header";
+import AdProfile from "./component/AdProfile";
+import Buttons from "./component/Buttons";
 function App() {
   return (
-    <div className="App">
-     <Header/>
-     <CreateAd/>
-    </div>
+   <>
+   <Router>
+    <Header/>
+    <Buttons/>
+    <Routes>
+    <Route path="/createad" element={<CreateAd />} />
+
+    <Route path="/profile" element={<AdProfile />} />
+
+    </Routes>
+   </Router>
+   </>
   );
 }
 
