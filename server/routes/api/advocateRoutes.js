@@ -20,13 +20,16 @@ router.get("/", async (req,res) => {
 
 // create "post" route
 router.post("/", async (req,res)=>{
-  
+  console.log(req.body);
     try{
         const advocateData = await Advocate.create(req.body)
+        
         res.status(200).json(advocateData)
         
     }catch(err){
+      console.log(err);
         res.status(400).json(err)
+        
     }
 });
 
