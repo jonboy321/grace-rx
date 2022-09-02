@@ -6,11 +6,10 @@ import Nav from "react-bootstrap/Nav";
 
 function Buttons() {
   return (
-    <div className='navbutton'>
-      
-       	<Nav.Link href="/createad">create advocate</Nav.Link>
-        
-        
+    <div className='navBtnContainer'>
+      <a href="/createad">
+      <button className='navbutton' id='navlink'>Get Started!</button>
+      </a>
     </div>
   );
 }
