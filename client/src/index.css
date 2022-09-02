@@ -26,7 +26,7 @@ code {
   justify-content: center;
   padding-bottom: 5pt;
   box-shadow: 1px 1px 5px;
-  background-color: lightblue;
+  background-color: rgb(143, 189, 143);
   margin-bottom: 40px;
 }
 
@@ -69,6 +69,32 @@ code {
 }
 
 .btnContainer {
+  text-align: center;
+}
+
+.navbutton {
+  border-style: solid;
+  border-width: 0px;
+  box-shadow: 5px 5px 20px darkgray;
+  border-radius: 20px;
+
+  background-color: rgba(0, 149, 255, 0.637);
+  text-align: center;
+  width: 10%;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.navBtnContainer {
+  text-align: center;
+}
+
+#navlink {
+  color: white;
+  text-decoration: none;
+  font-size: medium;
   text-align: center;
 }
 
