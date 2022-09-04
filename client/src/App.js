@@ -1,14 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CreateAd from "./component/CreateAd";
-import Header from "./component/Header";
 import AdProfile from "./component/AdProfile";
 import Buttons from "./component/Buttons";
+import NavBar from "./component/Navbar/Navbar";
+
 function App() {
   return (
    <>
    <Router>
-    <Header/>
-    <Buttons/>
+    <NavBar/>
     <Routes>
     <Route path="/createad" element={<CreateAd />} />
 
