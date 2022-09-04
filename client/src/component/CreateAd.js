@@ -27,7 +27,7 @@ function CreateAd() {
 		axios
 			.post("http://localhost:3001/api/advocate", data)
 			.then((response) => {
-				
+				console.log(response);
 				setData(response.data);
 			})
 			.catch((err) => console.log(err));

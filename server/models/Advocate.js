@@ -20,7 +20,7 @@ Advocate.init(
 			type: DataTypes.STRING,
 
 			allowull: false,
-			unique: true,
+			
 		},
 		fullname: {
 			type: DataTypes.STRING,
