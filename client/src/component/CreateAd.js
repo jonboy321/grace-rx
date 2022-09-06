@@ -44,13 +44,14 @@ function CreateAd() {
 
 	return (
 		<div className="formContainer">
+			<h4 className="formHeader">Please Enter Advocate Information</h4>
 			<form className="form">
 				<input id="mobile"
 					value={data.mobile}
 					name="mobile"
 					onChange={handleInputChange}
 					type="text"
-					placeholder="mobile"
+					placeholder="mobile number"
 				/>
 				<input id="fullname"
 					value={data.fullname}
@@ -78,7 +79,7 @@ function CreateAd() {
 					name="dob"
 					onChange={handleInputChange}
 					type="text"
-					placeholder="dob"
+					placeholder="dob (dd/mm/yyyy)"
 				/>
 				<input id="email"
 					value={data.email}
@@ -92,14 +93,14 @@ function CreateAd() {
 					name="datestarted"
 					onChange={handleInputChange}
 					type="text"
-					placeholder="date started"
+					placeholder="date started (dd/mm/yyyy)"
 				/>
 				<input id="datevh"
 					value={data.datevh}
 					name="datevh"
 					onChange={handleInputChange}
 					type="text"
-					placeholder="date verified hippa"
+					placeholder="date verified HIPAA (dd/mm/yyyy)"
 				/>
 				<input id="saddress"
 					value={data.saddress}
@@ -121,6 +122,55 @@ function CreateAd() {
 					onChange={handleInputChange}
 					type="text"
 					placeholder="onboard manager id"
+				/>
+				<input id="verified"
+					value={data.verified}
+					name="verified"
+					onChange={handleInputChange}
+					type="text"
+					placeholder="verified HIPAA (YES/NO)"
+				/>
+				<input id="insurance"
+					value={data.insurance}
+					name="insurance"
+					onChange={handleInputChange}
+					type="text"
+					placeholder="insurance"
+				/>
+				<input id="dsh"
+					value={data.dsh}
+					name="dsh"
+					onChange={handleInputChange}
+					type="text"
+					placeholder="days since hired"
+				/>
+				<input id="teamsize"
+					value={data.teamsize}
+					name="teamsize"
+					onChange={handleInputChange}
+					type="text"
+					placeholder="team size"
+				/>
+				<input id="p2wsale"
+					value={data.p2wsale}
+					name="p2wsale"
+					onChange={handleInputChange}
+					type="text"
+					placeholder="past 2wk sales"
+				/>
+				<input id="p2wtsale"
+					value={data.p2wtsale}
+					name="p2wtsale"
+					onChange={handleInputChange}
+					type="text"
+					placeholder="past 2wk team sales"
+				/>
+				<input id="ohi"
+					value={data.ohi}
+					name="ohi"
+					onChange={handleInputChange}
+					type="text"
+					placeholder="on hand inventory"
 				/>
 			</form>
 			<div className="btnContainer">

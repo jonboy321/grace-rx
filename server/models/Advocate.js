@@ -31,23 +31,23 @@ Advocate.init(
 		position: {
 			type: DataTypes.STRING,
 			allowNull: false,
-			defaultValue: "ceo",
+			// defaultValue: "ceo",
 		},
 		ss: {
 			type: DataTypes.INTEGER,
 			allowNull: false,
 		},
 		dob: {
-			type: DataTypes.INTEGER,
+			type: DataTypes.STRING,
 		},
 		email: {
 			type: DataTypes.STRING,
 		},
 		datestarted: {
-			type: DataTypes.INTEGER,
+			type: DataTypes.STRING,
 		},
 		datevh: {
-			type: DataTypes.INTEGER,
+			type: DataTypes.STRING,
 		},
 		saddress: {
 			type: DataTypes.STRING,
@@ -72,7 +72,7 @@ Advocate.init(
 			type: DataTypes.INTEGER,
 		},
 		p2wsale: {
-			type: DataTypes.STRING,
+			type: DataTypes.INTEGER,
 		},
 		p2wtsale: {
 			type: DataTypes.INTEGER,
