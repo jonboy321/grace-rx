@@ -11,11 +11,11 @@ export const MenuItems = [
     },
     {
         title: 'Create New Advocate',
-        url: './CreateAd',
+        url: './createad',
         cName: 'nav-links'
     },
     {
-        title: 'Contact Us',
+        title: 'Placeholder',
         url: '#',
         cName: 'nav-links'
     }

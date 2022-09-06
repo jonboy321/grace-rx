@@ -1,0 +1,22 @@
+.footer {
+    background: linear-gradient(90deg, rgb(166, 204, 182) 0%, rgb(24, 179, 117) 100%);
+    box-shadow: -1px -1px 5px;
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footerText {
+    text-align: center;
+    padding: 30px;
+    font-family: "Nunito", sans-serif;
+    letter-spacing: .2rem;
+    font-style: italic;
+    font-size: .7rem;
+}
+
+h5 {
+    letter-spacing: .1rem;
+    font-style:normal;
+}
