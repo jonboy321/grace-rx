@@ -1,7 +1,8 @@
 // create router express
 const router = require('express').Router();
 // get advocate model
-const Advocate = require('../../models/Advocate');
+const {Advocate,Inventory} = require('../../models');
+
 
 
 
@@ -9,13 +10,32 @@ const Advocate = require('../../models/Advocate');
 // create "get" all route
 router.get("/", async (req,res) => {
     try{
-        const advocateData = await Advocate.findAll()
+        const advocateData = await Advocate.findAll({
+          include:[{model:Inventory}]
+        })
         res.status(200).json(advocateData)
         
     }catch(err){
         res.status(400).json(err)
     }
     
+});
+router.get("/:id", async (req,res) => {
+  try{
+      const advocateData = await Advocate.findByPk(req.params.id,{
+        include:[{model:Inventory}]
+      });
+
+      if(!advocateData){
+        res.status(404).json({message:"there's no advocate found with that id"});
+        return
+      }
+      res.status(200).json(advocateData)
+      
+  }catch(err){
+      res.status(400).json(err)
+  }
+  
 });
 
 // create "post" route
